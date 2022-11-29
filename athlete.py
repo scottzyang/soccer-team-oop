@@ -23,4 +23,4 @@ print(athlete.name)
 # test salary method
 print(athlete.salary)
 athlete.contract_increase(30)
-print(athlete.salary)
+print(athlete.salary) 
