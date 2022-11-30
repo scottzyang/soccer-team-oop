@@ -7,11 +7,13 @@ class Player(Athlete):
     self.preferred_foot = preferred_foot
     self.position = position
 
+
   def change_position(self, new_position):
     if new_position.lower() == 'attacker' or new_position.lower() == 'defender':
       self.position = new_position
     else:
       print('Please change to a valid position')
+
 
   def change_number(self, new_number):
     self.number = new_number
@@ -23,7 +25,9 @@ print(beckham.name)
 
 # changes position
 print(beckham.position)
+
 beckham.change_position('Attacker')
+
 print(beckham.position)
 
 # changes number
