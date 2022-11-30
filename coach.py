@@ -11,7 +11,8 @@ class Coach(Athlete):
     def encourage_player(self):
         print(f'Great pass, now make the run!')
 
-    def scold_player(self):
+    # Private because only the coach can scold people
+    def __scold_player(self):
         print(f"You should have made the pass!")
 
 
