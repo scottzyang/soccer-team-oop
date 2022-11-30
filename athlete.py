@@ -5,13 +5,14 @@ class Athlete:
     self.age = age
     self.nation = nation
     self.yoe = yoe
-    self.salary = salary
+    # Salary is protected and only accessible by subclasses
+    self._salary = salary
 
   def introduction(self):
     print(f'Hello my name is {self.name}, I am {self.age} years old. I am from {self.nation}')
 
-  # possibly add another method
-  def contract_increase(self, percentage_increase):
+  # Protected method because player and coach class inherits this method and would require access.
+  def _contract_increase(self, percentage_increase):
     increase = self.salary * (percentage_increase / 100)
     self.salary += increase
 

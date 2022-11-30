@@ -4,7 +4,9 @@ import random
 class Attacker(Player):
   def __init__(self, name, age, nation, yoe, salary, number, preferred_foot, position, skill_move):
     super().__init__(name, age, nation, yoe, salary, number, preferred_foot, position)
-    self.skill_move = skill_move
+    
+    # Skill move is protected, so only coaches and other players have access to it. 
+    self._skill_move = skill_move
     self.scoring_chance = random.randint(0, 1)
     self.celebrate = False
 
