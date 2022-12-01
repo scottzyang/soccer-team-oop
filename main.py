@@ -13,4 +13,10 @@ for player in players:
     new_player = Attacker(player['name'], player['age'], player['nation'], player['salary'], player['number'],player['preferred_foot'], player['position'], player['skill_move'])
   current_roster.append(new_player)
 
-print(current_roster)
+# print name of each player on roster
+for player in current_roster:
+  print(f'{player.name}: {player.position}')
+
+# create new team
+united_states = Team('United States', current_roster)
+print(f'Team Name: {united_states.team_name}')
