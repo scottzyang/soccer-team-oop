@@ -1,8 +1,8 @@
 from athlete import Athlete
 
 class Player(Athlete):
-  def __init__(self, name, age, nation, yoe, salary, number, preferred_foot, position):
-    super().__init__(name, age, nation, yoe, salary)
+  def __init__(self, name, age, nation, salary, number, preferred_foot, position):
+    super().__init__(name, age, nation, salary)
     self.number = number
     self.preferred_foot = preferred_foot
     self.position = position
@@ -20,7 +20,7 @@ class Player(Athlete):
 
 
 # test --------------------------------------------------------------------------------
-beckham = Player('David Beckham', 26, 'England', 12, 650000, 23, 'right', 'Attacker')
+beckham = Player('David Beckham', 26, 'England', 650000, 23, 'right', 'Attacker')
 print(beckham.name)
 
 # changes position
@@ -36,6 +36,6 @@ beckham.change_number(11)
 print(beckham.number)
 
 # test inherited methods
-print(beckham.salary)
-beckham.contract_increase(25)
-print(beckham.salary)
+print(beckham._salary)
+beckham._contract_increase(25)
+print(beckham._salary)
