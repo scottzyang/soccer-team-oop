@@ -3,8 +3,8 @@ import random
 
 
 class Defender(Player):
-    def __init__(self, name, age, nation, yoe, salary, number, preferred_foot, position, in_box):
-        super().__init__(name, age, nation, yoe, salary, number, preferred_foot, position)
+    def __init__(self, name, age, nation, salary, number, preferred_foot, position, in_box):
+        super().__init__(name, age, nation, salary, number, preferred_foot, position)
         self.in_box = in_box
         self.pass_success = random.randint(0, 1)
 
@@ -31,7 +31,7 @@ class Defender(Player):
 
 
 # test --------------------------------------------------------------------------------
-ream = Defender('Tim Ream', 35, 'USA', 14, 7000000,
+ream = Defender('Tim Ream', 35, 'USA', 7000000,
                 13, 'left', 'Defender', True)
 
 # test methods
