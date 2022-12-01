@@ -20,22 +20,23 @@ class Player(Athlete):
 
 
 # test --------------------------------------------------------------------------------
-beckham = Player('David Beckham', 26, 'England', 650000, 23, 'right', 'Attacker')
-print(beckham.name)
+if __name__ == "__main__":
+  beckham = Player('David Beckham', 26, 'England', 650000, 23, 'right', 'Attacker')
+  print(beckham.name)
 
-# changes position
-print(beckham.position)
+  # changes position
+  print(beckham.position)
 
-beckham.change_position('Attacker')
+  beckham.change_position('Attacker')
 
-print(beckham.position)
+  print(beckham.position)
 
-# changes number
-print(beckham.number)
-beckham.change_number(11)
-print(beckham.number)
+  # changes number
+  print(beckham.number)
+  beckham.change_number(11)
+  print(beckham.number)
 
-# test inherited methods
-print(beckham._salary)
-beckham._contract_increase(25)
-print(beckham._salary)
+  # test inherited methods
+  print(beckham._salary)
+  beckham._contract_increase(25)
+  print(beckham._salary)

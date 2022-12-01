@@ -17,10 +17,11 @@ class Athlete:
 
 
 # test --------------------------------------------------------------------------------
-athlete = Athlete('Christian Pulisic', 24, 'USA', 250000)
-print(athlete.name)
+if __name__ == "__main__":
+  athlete = Athlete('Christian Pulisic', 24, 'USA', 250000)
+  print(athlete.name)
 
-# test salary method
-print(athlete._salary)
-athlete._contract_increase(30)
-print(athlete._salary) 
+  # test salary method
+  print(athlete._salary)
+  athlete._contract_increase(30)
+  print(athlete._salary) 

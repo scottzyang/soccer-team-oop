@@ -27,16 +27,16 @@ class Attacker(Player):
   def introduction(self):
     print(f'Hello my name is {self.name}, I play as a {self.position} and I am from {self.nation}.')
 
-# test
-weah = Attacker('Tim Weah', 22, 'USA', 25000, 22, 'right', 'Attacker', 'step-over')
+if __name__ == "__main__":
+  weah = Attacker('Tim Weah', 22, 'USA', 25000, 22, 'right', 'Attacker', 'step-over')
 
-# test methods
-weah.shoot()
+  # test methods
+  weah.shoot()
 
-# test positions
-print(weah.position)
-weah.change_position('Right Winger')
-print(weah.position)
+  # test positions
+  print(weah.position)
+  weah.change_position('Right Winger')
+  print(weah.position)
 
-# test introduction method from parent
-weah.introduction()
+  # test introduction method from parent
+  weah.introduction()

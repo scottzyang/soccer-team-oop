@@ -21,20 +21,21 @@ class Coach(Athlete):
 
 
 # test --------------------------------------------------------------------------------
-Ancelotti = Coach('Carlo Ancelotti', 63, 'Italy',
-                  10500000, 30, 23, 'Real Madrid')
-print(Ancelotti.name)
+if __name__ == "__main__":
+    Ancelotti = Coach('Carlo Ancelotti', 63, 'Italy',
+                    10500000, 30, 23, 'Real Madrid')
+    print(Ancelotti.name)
 
-# encourage player
-print(Ancelotti.yrs_coaching)
-Ancelotti.encourage_player()
+    # encourage player
+    print(Ancelotti.yrs_coaching)
+    Ancelotti.encourage_player()
 
-# scold player
-print(Ancelotti.trophies)
-# Ancelotti.__scold_player() does not work, since it is a private method that can only be accessible within the class
-Ancelotti.angry()
+    # scold player
+    print(Ancelotti.trophies)
+    # Ancelotti.__scold_player() does not work, since it is a private method that can only be accessible within the class
+    Ancelotti.angry()
 
-# test inherited methods
-print(Ancelotti._salary)
-Ancelotti._contract_increase(10)
-print(Ancelotti._salary)
+    # test inherited methods
+    print(Ancelotti._salary)
+    Ancelotti._contract_increase(10)
+    print(Ancelotti._salary)
