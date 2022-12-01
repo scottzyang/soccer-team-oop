@@ -4,12 +4,16 @@ class Team:
   def __init__(self, team_name, roster):
     self.team_name = team_name
     self.roster = roster
+    self.coach = None
 
   def add_players(self, new_player):
     self.roster.append(new_player)
 
   def sell_player(self, sold_player):
     self.roster.remove(sold_player)
+
+  def set_coach(self, coach):
+    self.coach = coach
 
 
 
