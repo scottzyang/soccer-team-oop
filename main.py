@@ -20,3 +20,8 @@ for player in current_roster:
 # create new team
 united_states = Team('United States', current_roster)
 print(f'Team Name: {united_states.team_name}')
+
+# create a coach and add to the team.
+berhalter = Coach('Gregg Berhalter', 45, 'USA', 500000, 15, 4, united_states)
+united_states.set_coach(berhalter)
+print(united_states.coach.name)
