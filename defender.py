@@ -29,18 +29,18 @@ class Defender(Player):
         print(
             f'My name is {self.name}, I play as a {self.position} and I am from {self.nation}.')
 
+# Test
+if __name__ == "__main__":
+    ream = Defender('Tim Ream', 35, 'USA', 7000000,
+                    13, 'left', 'Defender', True)
 
-# test --------------------------------------------------------------------------------
-ream = Defender('Tim Ream', 35, 'USA', 7000000,
-                13, 'left', 'Defender', True)
+    # test methods
+    ream.long_pass()
 
-# test methods
-ream.long_pass()
+    # test positions
+    print(ream.position)
+    ream.change_position('Center Back')
+    print(ream.position)
 
-# test positions
-print(ream.position)
-ream.change_position('Center Back')
-print(ream.position)
-
-# test introduction from Player
-ream.introduction()
+    # test introduction from Player
+    ream.introduction()
