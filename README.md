@@ -14,6 +14,10 @@ the `Player` class to create `Attackers` and `Defenders`. Each class can instant
 
 To meet the requirement of one class demonstrating composition, we created the `Team` class that imports from `Player` to add players to a team, create a roster and take the field (eventually!)
 
+## Demo & Diagram:
+- View our 10 minute [demo video](https://youtu.be/E0Wr156g4MI).
+- View our [UML Class Diagram](https://drive.google.com/file/d/1ECzKUt_XtWk0DvanENg1W5m6CzQ2mD0Y/view?usp=sharing).
+
 ## Assignment Requirements:
 
 For this assignment you will need to complete the following requirements:
